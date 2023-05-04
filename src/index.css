@@ -11,3 +11,79 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* width */
+.chat-users::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+.chat-users::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px rgb(214, 214, 214); 
+  border-radius: 5px;
+}
+ 
+/* Handle */
+.chat-users::-webkit-scrollbar-thumb {
+  background: #ddd; 
+  border-radius: 20px;
+}
+.online-beep{
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: limegreen;
+  position: absolute;
+  left: 5px;
+  bottom: 0;
+  border: 1px solid #fff;
+}
+.message-text{
+  display: flex;
+  margin-top: 14px;
+  width: 100%;
+}
+.message.own .message-text{
+  /* justify-content: flex-end; */
+  flex-direction: row-reverse;
+}
+.message-text p{
+  margin-left: 10px;
+  padding: 10px;
+  background-color: #1976D2;
+  color: #fff;
+  max-width: calc(60% - 20px);
+  border-radius: 0 7px 7px 7px;
+  display: inline-block;
+}
+.message.own .message-text p{
+  margin-left: 0;
+  margin-right: 10px;
+  background-color: #333;
+  border-radius: 7px 0 7px 7px;
+}
+.message-time{
+  font-size: 12px;
+  font-weight: 500;
+}
+.message.own .message-time{
+  text-align: right;
+}
+
+/* width */
+.chat-messages::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+.chat-messages::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px rgb(219, 214, 214); 
+  border-radius: 5px;
+}
+ 
+/* Handle */
+.chat-messages::-webkit-scrollbar-thumb {
+  background: #8b9ef3; 
+  border-radius: 20px;
+}
